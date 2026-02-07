@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import logoArnon from "@/assets/logo-arnon.png";
 
 const Hero = () => {
   return (
@@ -13,14 +14,13 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-8rem)]">
           {/* Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
-            {/* Logo Badge */}
-            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6 animate-fade-in">
-              <div className="w-8 h-8 rounded-full bg-primary-foreground flex items-center justify-center">
-                <span className="text-primary font-heading font-bold text-sm">AM</span>
-              </div>
-              <span className="text-primary-foreground/90 font-medium text-sm">
-                Urologista Especializado
-              </span>
+            {/* Hero Logo */}
+            <div className="mb-8 animate-fade-in flex justify-center lg:justify-start">
+              <img
+                src={logoArnon}
+                alt="Dr. Arnon Moraes - Urologista"
+                className="h-16 md:h-24 w-auto brightness-0 invert drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+              />
             </div>
 
             <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight mb-6 animate-fade-in-up text-balance">

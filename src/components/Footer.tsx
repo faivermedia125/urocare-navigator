@@ -1,4 +1,5 @@
 import { Phone, Mail, Instagram } from "lucide-react";
+import logoArnon from "@/assets/logo-arnon.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -13,19 +14,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           {/* Logo & Info */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-full bg-primary-foreground flex items-center justify-center">
-                <span className="text-primary font-heading font-bold text-lg">
-                  AM
-                </span>
-              </div>
-              <div>
-                <p className="font-heading font-bold text-lg">
-                  Dr. Arnon Moraes
-                </p>
-                <p className="text-primary-foreground/80 text-sm">Urologista</p>
-              </div>
-            </div>
+            <img
+              src={logoArnon}
+              alt="Dr. Arnon Moraes - Urologista"
+              className="h-16 md:h-18 w-auto mb-4 brightness-0 invert"
+            />
             <p className="text-primary-foreground/70 text-sm">
               CRM: [Número do CRM]
             </p>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logoArnon from "@/assets/logo-arnon.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,19 +32,14 @@ const Navbar = () => {
       <div className="container-custom mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-lg">
-                AM
-              </span>
-            </div>
-            <span
-              className={`font-heading font-semibold text-lg hidden sm:block transition-colors ${
-                isScrolled ? "text-primary" : "text-primary-foreground"
+          <a href="#" className="flex items-center">
+            <img
+              src={logoArnon}
+              alt="Dr. Arnon Moraes - Urologista"
+              className={`h-10 md:h-14 w-auto transition-all duration-300 ${
+                isScrolled ? "" : "brightness-0 invert"
               }`}
-            >
-              Dr. Arnon Moraes
-            </span>
+            />
           </a>
 
           {/* Desktop Navigation */}
